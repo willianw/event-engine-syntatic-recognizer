@@ -1,0 +1,1 @@
+{"alphabet": ["READ", ":Var", ",", ",", ",", ":Var", ",", ",", ",", ",", ","], "states": ["A", "E", "C", "D", "B"], "initial_state": "A", "accepting_states": ["C", "D"], "transitions": [["A", "READ", "B"], ["B", ":Var", "C"], ["C", ",", "E"], ["E", ":Var", "D"], ["D", ",", "E"]]}

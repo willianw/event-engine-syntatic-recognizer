@@ -1,0 +1,1 @@
+{"alphabet": ["REM", ":Character", ":Character", ":Character", ":Character"], "states": ["C", "B", "A"], "initial_state": "A", "accepting_states": ["B", "C"], "transitions": [["A", "REM", "B"], ["B", ":Character", "C"], ["C", ":Character", "C"]]}

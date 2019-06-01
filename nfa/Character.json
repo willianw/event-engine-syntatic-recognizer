@@ -1,0 +1,1 @@
+{"alphabet": ["", "special", "letter", "digit"], "states": ["0", "1", "2", "3", "4", "5", "6"], "initial_states": ["0"], "accepting_states": ["6"], "transitions": [["0", "letter", "1"], ["0", "\u03b5", "0"], ["0", "\u03b5", "2"], ["0", "\u03b5", "4"], ["2", "digit", "3"], ["4", "special", "5"], ["1", "\u03b5", "6"], ["3", "\u03b5", "6"], ["5", "\u03b5", "6"]]}

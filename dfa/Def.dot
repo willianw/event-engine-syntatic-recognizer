@@ -1,0 +1,22 @@
+digraph {
+	fake [style=invisible]
+	D
+	B
+	C
+	I [shape=doublecircle]
+	F
+	H
+	E
+	G
+	A [root=true]
+	fake -> A [style=bold]
+	A -> B [label="DEF FN"]
+	B -> C [label=letter]
+	C -> D [label="("]
+	D -> E [label=letter]
+	E -> G [label=")"]
+	E -> F [label=digit]
+	G -> H [label="="]
+	F -> G [label=")"]
+	H -> I [label=":Exp"]
+}

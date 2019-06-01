@@ -1,0 +1,20 @@
+digraph {
+	fake0 [style=invisible]
+	3
+	2
+	5
+	1
+	4
+	0 [root=true]
+	6 [shape=doublecircle]
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=letter]
+	0 -> 4 [label="ε"]
+	0 -> 2 [label="ε"]
+	0 -> 0 [label="ε"]
+	2 -> 3 [label=digit]
+	4 -> 5 [label=special]
+	1 -> 6 [label="ε"]
+	3 -> 6 [label="ε"]
+	5 -> 6 [label="ε"]
+}

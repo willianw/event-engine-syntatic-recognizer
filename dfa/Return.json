@@ -1,0 +1,1 @@
+{"alphabet": ["RETURN"], "states": ["A", "B"], "initial_state": "A", "accepting_states": ["B"], "transitions": [["A", "RETURN", "B"]]}

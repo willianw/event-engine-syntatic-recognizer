@@ -1,0 +1,26 @@
+digraph {
+	fake0 [style=invisible]
+	"0-5"
+	"0-0"
+	"0-3"
+	3 [shape=doublecircle]
+	2
+	1
+	0 [root=true]
+	"0-2"
+	"0-1"
+	"0-4"
+	fake0 -> 0 [style=bold]
+	0 -> "0-0" [label="ε"]
+	0 -> 0 [label="ε"]
+	"0-5" -> 1 [label="ε"]
+	"0-0" -> "0-1" [label=GOTO]
+	"0-0" -> "0-0" [label="ε"]
+	"0-0" -> "0-2" [label="ε"]
+	"0-2" -> "0-3" [label=GO]
+	"0-3" -> "0-4" [label=TO]
+	"0-1" -> "0-5" [label="ε"]
+	"0-4" -> "0-5" [label="ε"]
+	1 -> 2 [label=":Int"]
+	2 -> 3 [label="ε"]
+}

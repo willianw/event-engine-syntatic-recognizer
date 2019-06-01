@@ -1,0 +1,34 @@
+digraph {
+	fake [style=invisible]
+	D [shape=doublecircle]
+	B
+	J
+	C
+	I
+	F
+	H
+	E [shape=doublecircle]
+	G
+	A [root=true]
+	fake -> A [style=bold]
+	A -> B [label="+"]
+	A -> C [label="-"]
+	A -> D [label=":Eb"]
+	B -> D [label=":Eb"]
+	C -> D [label=":Eb"]
+	D -> G [label="-"]
+	D -> I [label="/"]
+	D -> H [label="*"]
+	D -> J [label="↑"]
+	D -> F [label="+"]
+	G -> E [label=":Eb"]
+	I -> E [label=":Eb"]
+	H -> E [label=":Eb"]
+	J -> E [label=":Eb"]
+	F -> E [label=":Eb"]
+	E -> H [label="*"]
+	E -> J [label="↑"]
+	E -> F [label="+"]
+	E -> G [label="-"]
+	E -> I [label="/"]
+}

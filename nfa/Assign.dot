@@ -1,0 +1,16 @@
+digraph {
+	fake0 [style=invisible]
+	3
+	2
+	5 [shape=doublecircle]
+	1
+	4
+	0 [root=true]
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=LET]
+	0 -> 0 [label="ε"]
+	1 -> 2 [label=":Var"]
+	2 -> 3 [label="="]
+	3 -> 4 [label=":Exp"]
+	4 -> 5 [label="ε"]
+}

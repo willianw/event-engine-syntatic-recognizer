@@ -1,0 +1,32 @@
+digraph {
+	fake0 [style=invisible]
+	9 [shape=doublecircle]
+	3
+	"4-1"
+	2
+	5
+	"4-2"
+	1
+	4
+	0 [root=true]
+	8
+	6
+	7
+	"4-0"
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label="DEF FN"]
+	0 -> 0 [label="ε"]
+	1 -> 2 [label=letter]
+	2 -> 3 [label="("]
+	3 -> 4 [label=letter]
+	4 -> "4-0" [label="ε"]
+	"4-2" -> 5 [label="ε"]
+	"4-0" -> "4-1" [label=digit]
+	"4-0" -> "4-2" [label="ε"]
+	"4-0" -> "4-0" [label="ε"]
+	"4-1" -> "4-2" [label="ε"]
+	5 -> 6 [label=")"]
+	6 -> 7 [label="="]
+	7 -> 8 [label=":Exp"]
+	8 -> 9 [label="ε"]
+}

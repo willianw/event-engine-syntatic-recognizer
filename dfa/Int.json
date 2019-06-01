@@ -1,0 +1,1 @@
+{"alphabet": ["digit", "digit", "digit", "digit", "digit"], "states": ["C", "B", "A"], "initial_state": "A", "accepting_states": ["B", "C"], "transitions": [["A", "digit", "B"], ["B", "digit", "C"], ["C", "digit", "C"]]}

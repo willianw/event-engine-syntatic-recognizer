@@ -1,0 +1,1 @@
+{"alphabet": ["", "GOSUB", ":Int"], "states": ["0", "1", "2", "3"], "initial_states": ["0"], "accepting_states": ["3"], "transitions": [["0", "GOSUB", "1"], ["0", "\u03b5", "0"], ["1", ":Int", "2"], ["2", "\u03b5", "3"]]}

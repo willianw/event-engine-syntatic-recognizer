@@ -1,0 +1,47 @@
+1) Program = BStatement “\n” { BStatement “\n”{“\n”} } Int “END” .
+
+2) BStatement = Int ( Assign | Read | Data | Print | Goto | If | For | Next | Dim | Def | Gosub | Return | Remark ) .
+
+3) Assign = “LET” Var “=” Exp .
+
+4) Var = letter digit | letter [ “(” Exp { “,” Exp } “)” ] .
+
+5) Exp = [ “+” | “-” ] Eb { ( “+” | “-” | “*” | “/” | “↑” ) Eb } .
+
+6) Eb = “(” Exp “)” | Num | Var | ( “FN” letter | Predef ) “(” Exp “)” .
+
+7) Predef = “SIN” | “COS” | “TAN” | “ATN” | “EXP” | “ABS” | “LOG” | “SQR” | “Int” | “RND” .
+
+8) Read = “READ” Var { “,” Var } .
+
+9) Data = “DATA” Snum { “,” Snum } .
+
+10) Print = “PRINT” [ Pitem { “,” Pitem } [ “,” ] ] .
+
+11) Pitem = Exp | “"” Character { Character } “"” [ Exp ] .
+
+12) Goto = ( “GOTO” | “GO” “TO” ) Int .
+
+13) If = “IF” Exp ( “>=” | “>” | “<>” | “<” | “<=” | “=” ) Exp “THEN” Int .
+
+14) For = “FOR” letter [ digit ] “=” Exp “TO” Exp [ “STEP” Exp ] .
+
+15) Next = “NEXT” letter [ digit ] .
+
+16) Dim = “DIM” letter “(” Int { “,” Int } “)” { “,” letter “(” Int { “,” Int } “)” } .
+
+17) Def = “DEF FN” letter “(” letter [ digit ] “)” “=” Exp .
+
+18) Gosub = “GOSUB” Int .
+
+19) Return = “RETURN” .
+
+20) Remark = “REM” { Character } .
+
+21) Int = digit { digit } .
+
+22) Num = ( Int [ “.” { digit } ] | “.” Int ) [ “E” [ “+” | “-” ] Int ] .
+
+23) Snum = [ “+” | “-” ] Num .
+
+24) Character = letter | digit | special .

@@ -1,0 +1,55 @@
+digraph {
+	fake0 [style=invisible]
+	17
+	2
+	5
+	1
+	8
+	18
+	16
+	10
+	4
+	12
+	3
+	0 [root=true]
+	13
+	6
+	7
+	15
+	9
+	20 [shape=doublecircle]
+	11
+	14
+	19
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=SIN]
+	0 -> 16 [label="ε"]
+	0 -> 2 [label="ε"]
+	0 -> 10 [label="ε"]
+	0 -> 4 [label="ε"]
+	0 -> 18 [label="ε"]
+	0 -> 0 [label="ε"]
+	0 -> 8 [label="ε"]
+	0 -> 14 [label="ε"]
+	0 -> 6 [label="ε"]
+	0 -> 12 [label="ε"]
+	2 -> 3 [label=COS]
+	4 -> 5 [label=TAN]
+	6 -> 7 [label=ATN]
+	8 -> 9 [label=EXP]
+	10 -> 11 [label=ABS]
+	12 -> 13 [label=LOG]
+	14 -> 15 [label=SQR]
+	16 -> 17 [label=Int]
+	18 -> 19 [label=RND]
+	1 -> 20 [label="ε"]
+	3 -> 20 [label="ε"]
+	5 -> 20 [label="ε"]
+	7 -> 20 [label="ε"]
+	9 -> 20 [label="ε"]
+	11 -> 20 [label="ε"]
+	13 -> 20 [label="ε"]
+	15 -> 20 [label="ε"]
+	17 -> 20 [label="ε"]
+	19 -> 20 [label="ε"]
+}

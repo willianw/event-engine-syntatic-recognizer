@@ -1,0 +1,19 @@
+digraph {
+	fake [style=invisible]
+	D
+	B [shape=doublecircle]
+	C
+	F [shape=doublecircle]
+	E
+	G [shape=doublecircle]
+	A [root=true]
+	fake -> A [style=bold]
+	A -> C [label="\""]
+	A -> B [label=":Exp"]
+	C -> D [label=":Character"]
+	D -> F [label="\""]
+	D -> E [label=":Character"]
+	F -> G [label=":Exp"]
+	E -> F [label="\""]
+	E -> E [label=":Character"]
+}

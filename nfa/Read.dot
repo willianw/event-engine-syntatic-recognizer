@@ -1,0 +1,24 @@
+digraph {
+	fake0 [style=invisible]
+	"2-0"
+	3
+	"2-1"
+	2
+	1
+	"2-2"
+	4 [shape=doublecircle]
+	0 [root=true]
+	"2-3"
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=READ]
+	0 -> 0 [label="ε"]
+	1 -> 2 [label=":Var"]
+	2 -> "2-0" [label="ε"]
+	"2-0" -> "2-0" [label="ε"]
+	"2-0" -> 3 [label="ε"]
+	"2-0" -> "2-1" [label=","]
+	"2-1" -> "2-2" [label=":Var"]
+	"2-2" -> "2-3" [label="ε"]
+	"2-3" -> "2-0" [label="ε"]
+	3 -> 4 [label="ε"]
+}

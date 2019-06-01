@@ -1,0 +1,12 @@
+digraph {
+	fake0 [style=invisible]
+	2
+	0 [root=true]
+	3 [shape=doublecircle]
+	1
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=GOSUB]
+	0 -> 0 [label="ε"]
+	1 -> 2 [label=":Int"]
+	2 -> 3 [label="ε"]
+}

@@ -1,0 +1,14 @@
+digraph {
+	fake [style=invisible]
+	D
+	B
+	C
+	E [shape=doublecircle]
+	A [root=true]
+	fake -> A [style=bold]
+	A -> B [label=GOTO]
+	A -> C [label=GO]
+	B -> E [label=":Int"]
+	C -> D [label=TO]
+	D -> E [label=":Int"]
+}

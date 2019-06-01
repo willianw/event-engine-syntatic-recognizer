@@ -1,0 +1,1 @@
+{"alphabet": ["PRINT", ":Pitem", ",", ",", ",", ",", ":Pitem", ":Pitem", ",", ",", ",", ",", ",", ":Pitem", ":Pitem"], "states": ["B", "G", "F", "A", "E", "D", "C"], "initial_state": "A", "accepting_states": ["B", "C", "D", "F"], "transitions": [["A", "PRINT", "B"], ["B", ":Pitem", "C"], ["C", ",", "F"], ["F", ":Pitem", "D"], ["D", ",", "F"]]}

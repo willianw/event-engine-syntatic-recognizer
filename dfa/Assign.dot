@@ -1,0 +1,13 @@
+digraph {
+	fake [style=invisible]
+	D
+	B
+	C
+	E [shape=doublecircle]
+	A [root=true]
+	fake -> A [style=bold]
+	A -> B [label=LET]
+	B -> C [label=":Var"]
+	C -> D [label="="]
+	D -> E [label=":Exp"]
+}

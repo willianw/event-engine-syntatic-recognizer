@@ -1,0 +1,39 @@
+digraph {
+	fake0 [style=invisible]
+	3
+	"6-1"
+	"6-0"
+	"6-2"
+	"4-1"
+	2
+	5
+	"4-2"
+	1
+	4
+	0 [root=true]
+	8 [shape=doublecircle]
+	6
+	7
+	"4-0"
+	fake0 -> 0 [style=bold]
+	0 -> 1 [label=":Exp"]
+	0 -> 2 [label="ε"]
+	0 -> 0 [label="ε"]
+	2 -> 3 [label="\""]
+	3 -> 4 [label=":Character"]
+	4 -> "4-0" [label="ε"]
+	"4-0" -> 5 [label="ε"]
+	"4-0" -> "4-0" [label="ε"]
+	"4-0" -> "4-1" [label=":Character"]
+	"4-1" -> "4-2" [label="ε"]
+	"4-2" -> "4-0" [label="ε"]
+	5 -> 6 [label="\""]
+	6 -> "6-0" [label="ε"]
+	"6-2" -> 7 [label="ε"]
+	"6-0" -> "6-1" [label=":Exp"]
+	"6-0" -> "6-0" [label="ε"]
+	"6-0" -> "6-2" [label="ε"]
+	"6-1" -> "6-2" [label="ε"]
+	1 -> 8 [label="ε"]
+	7 -> 8 [label="ε"]
+}

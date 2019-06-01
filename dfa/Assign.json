@@ -1,0 +1,1 @@
+{"alphabet": ["LET", ":Var", "=", ":Exp"], "states": ["A", "D", "C", "E", "B"], "initial_state": "A", "accepting_states": ["E"], "transitions": [["A", "LET", "B"], ["B", ":Var", "C"], ["C", "=", "D"], ["D", ":Exp", "E"]]}

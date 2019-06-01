@@ -1,0 +1,1 @@
+{"alphabet": ["DATA", ":Snum", ",", ",", ",", ":Snum", ",", ",", ",", ",", ","], "states": ["A", "E", "C", "D", "B"], "initial_state": "A", "accepting_states": ["C", "D"], "transitions": [["A", "DATA", "B"], ["B", ":Snum", "C"], ["C", ",", "E"], ["E", ":Snum", "D"], ["D", ",", "E"]]}
